@@ -44,14 +44,13 @@ int main(void){
 	LCDPinInit();
 	LCDScreenInit();
 	
-	messages[0] = "Message1";
-	messages[1] = "Message2";
-  messages[2] = "Message3";
-	messages[3] = "Message4";
-	messages[4] = "Message5";
+	messages[0] = "1 marko";
+	messages[1] = "marko 2";
+  	messages[2] = "marko 3";
+	messages[3] = "marko 4";
+	messages[4] = "marko 5";
 	
-	srand(time(0)); // generate seed timestamp 
-	
+	srand(time(0)); 	
 	while(1)
     {
     	inputValue = GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0);
